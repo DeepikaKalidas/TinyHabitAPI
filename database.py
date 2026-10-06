@@ -6,7 +6,9 @@ connection.execute("""
 CREATE TABLE IF NOT EXISTS habits (
     id integer primary key,
     name text not null,
-    completed boolean not null
+    priority integer not null,
+    frequency integer not null,
+    completion_state boolean not null
 )
 """)
 
